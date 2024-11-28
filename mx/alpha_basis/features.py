@@ -72,8 +72,8 @@ closeav5 = Feature(FeatureType.CLOSEAV5)
 
 # 定义目标计算逻辑
 # 当前的目标：过去 20 天的 Close 相对于当前 Close 的变化率
-#target = Ref(close, -20) / close - 1
-target = 1- Ref(close, -20) / close 
+target = Ref(close, -20) / close - 1
+#target = 1- Ref(close, -20) / close 
 #target = -closeav1*closeap1+closebv1*closebp1
 #-df["Closebv1"]*df["Closebp1"] + df["Closeav1"]*df["Closeap1"]
 
